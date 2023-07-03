@@ -14,9 +14,11 @@ pub fn build(b: *std.Build) void {
     lib.linkLibC();
 
     lib.installHeadersDirectory("GL", "GL");
-    lib.installHeadersDirectory("X11", "X11");
-    lib.installHeadersDirectory("xcb", "xcb");
-    lib.installHeadersDirectory("xkbcommon", "xkbcommon");
+    lib.installHeadersDirectory("GLES", "GLES");
+    lib.installHeadersDirectory("GLES2", "GLES2");
+    lib.installHeadersDirectory("GLES3", "GLES3");
+    lib.installHeadersDirectory("GLSC", "GLSC");
+    lib.installHeadersDirectory("GLSC2", "GLSC2");
 
     b.installArtifact(lib);
 }
