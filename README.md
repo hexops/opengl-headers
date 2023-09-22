@@ -1,6 +1,6 @@
 # opengl-headers packaged for the Zig build system
 
-This is a Zig package which OpenGL and OpenGLES headers needed to develop and cross-compile e.g. GLFW applications.
+This is a Zig package which provides various OpenGL and OpenGL ES headers needed to develop and cross-compile e.g. GLFW applications.
 
 ## Updating
 
