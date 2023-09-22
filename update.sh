@@ -6,6 +6,7 @@ OPENGL_REF=22ffb40aef5203367ad9a1431cabbba30d0230b9
 EGL_REF=b055c9b483e70ecd57b3cf7204db21f5a06f9ffe
 MESA_REF=4baea976bb585013124b91dc4e9aef793f36605a
 
+# `git clone --depth 1` but at a specific revision
 git_clone_ref() {
     repo=$1
     ref=$2
