@@ -11,13 +11,13 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
-    lib.installHeadersDirectory("GL", "GL");
-    lib.installHeadersDirectory("GLES", "GLES");
-    lib.installHeadersDirectory("GLES2", "GLES2");
-    lib.installHeadersDirectory("GLES3", "GLES3");
-    lib.installHeadersDirectory("GLSC2", "GLSC2");
-    lib.installHeadersDirectory("EGL", "EGL");
-    lib.installHeadersDirectory("KHR", "KHR");
+    lib.installHeadersDirectory(b.path("GL"), "GL", .{});
+    lib.installHeadersDirectory(b.path("GLES"), "GLES", .{});
+    lib.installHeadersDirectory(b.path("GLES2"), "GLES2", .{});
+    lib.installHeadersDirectory(b.path("GLES3"), "GLES3", .{});
+    lib.installHeadersDirectory(b.path("GLSC2"), "GLSC2", .{});
+    lib.installHeadersDirectory(b.path("EGL"), "EGL", .{});
+    lib.installHeadersDirectory(b.path("KHR"), "KHR", .{});
 
     b.installArtifact(lib);
 }
